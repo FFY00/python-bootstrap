@@ -1,0 +1,21 @@
+[submodule "external/build"]
+	path = external/build
+	url = https://github.com/pypa/build.git
+[submodule "external/installer"]
+	path = external/installer
+	url = https://github.com/FFY00/installer.git
+[submodule "external/setuptools"]
+	path = external/setuptools
+	url = https://github.com/pypa/setuptools.git
+[submodule "external/flit"]
+	path = external/flit
+	url = https://github.com/takluyver/flit.git
+[submodule "external/wheel"]
+	path = external/wheel
+	url = https://github.com/pypa/wheel.git
+[submodule "external/pep517"]
+	path = external/pep517
+	url = https://github.com/pypa/pep517.git
+[submodule "external/tomli"]
+	path = external/tomli
+	url = https://github.com/hukkin/tomli.git
