@@ -40,8 +40,8 @@ def main(cli_args: Sequence[str], prog: Optional[str] = None):
         shutil.rmtree(outdir)
     outdir.mkdir(parents=True)
 
-    # first we install the setuptools egg-info, then wheel do that setuptools
-    # thinks they are installed
+    # first we install the setuptools egg-info, then wheel,
+    # so that setuptools thinks they are installed
     bootstrap.install_package_egginfo('setuptools')
     bootstrap.install_package_egginfo('wheel')
     # then we can build everything
