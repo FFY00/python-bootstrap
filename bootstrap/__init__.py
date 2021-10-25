@@ -96,16 +96,6 @@ def log(msg):
     _logger.info(msg)
 
 
-# not needed after https://github.com/pypa/build/pull/361
-def create_isolated_env_venv_no_pip(path: str) -> Tuple[str, str]:
-    import venv
-
-    venv.EnvBuilder(symlinks=build.env._fs_supports_symlink()).create(path)
-    executable, script_dir, purelib = build.env._find_executable_and_scripts(path)
-
-    return executable, script_dir
-
-
 def custom_runner(
     cmd: Sequence[str],
     cwd: Optional[str] = None,
