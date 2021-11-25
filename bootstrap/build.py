@@ -60,4 +60,4 @@ def main(cli_args: Sequence[str], prog: Optional[str] = None):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:], 'python -m bootstra.build')
+    main(sys.argv[1:], 'python -m bootstrap.build')
