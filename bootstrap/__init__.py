@@ -85,7 +85,6 @@ sys.path.insert(0, str(MODULES))
 
 # import what we need from the injected modules
 import build  # noqa: E402
-import build.env  # noqa: E402
 import pep517  # noqa: E402
 
 
